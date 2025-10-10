@@ -1,31 +1,37 @@
-#include<iostream>
-#include<stdbool.h>
+//  Check whether a number is prime or not:
+// --------------------------------------------
+//  Input a number to check prime or not: 13
+//  The entered number is a prime number.
 
+// improve version need 
+
+#include <iostream>
 using namespace std;
 
+int main()
+{
+    int num1, ctr = 0;
 
-int main(){
+    cout << "Check whether a number is prime or not:\n";
+    cout << "----------------------------------------\n";
+    cout << "Enter the a number to check prime or not: ";
+    cin >> num1;
 
-    int num;
-    bool std = true;
-
-    cout << "Enter a number to check prime or not : "<< endl;
-    cin >> num;
-
-    for (int i = 2;i<num/2;i++){
-
-        if(num % i ==0){
-            std = false;
-            break;
+    for (int i = 1; i <= num1; i++)
+    {
+        if (num1 % i == 0)
+        {
+            ctr++;
         }
     }
 
-    if(std == true){
-        cout << "This number is prime number."<< endl;
+    if (ctr == 2)
+    {
+        cout << "The entered number is prime.\n" << endl;
     }
-    else{
-        cout << "This number is not a prime number."<< endl;
+    else
+    {
+        cout << "The entered number is not prime.\n" << endl;
     }
-    
     return 0;
 }
