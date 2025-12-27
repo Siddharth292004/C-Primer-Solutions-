@@ -1,3 +1,6 @@
+// 1️⃣ Declare a 2D array of size 3×3 and print it.
+
+
 #include<iostream>
 using namespace std;
 
